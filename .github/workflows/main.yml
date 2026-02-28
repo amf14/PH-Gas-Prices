@@ -1,0 +1,29 @@
+name: Update PH Gas Prices
+
+on:
+  schedule:
+    # Every Tuesday at 10:00 AM Manila time (UTC+8 = 02:00 UTC)
+    - cron: "0 2 * * 2"
+  workflow_dispatch: # allow manual trigger from GitHub Actions tab
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run scraper
+        env:
+          GIST_ID: ${{ secrets.GIST_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scrape_doe_prices.py
