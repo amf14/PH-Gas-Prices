@@ -1,0 +1,55 @@
+{
+  "week": "Feb 25 – Mar 03, 2026",
+  "updated": "Feb 25, 2026",
+  "region": "NCR Metro Manila",
+  "source": "DOE Oil Monitor",
+  "crude_wti": "71.40",
+  "crude_change": "-1.2%",
+  "fuels": [
+    {
+      "name": "Ron 91",
+      "grade": "Regular",
+      "min": "56.20",
+      "max": "62.10",
+      "avg": "59.15",
+      "change": "-0.25",
+      "direction": "down"
+    },
+    {
+      "name": "Ron 95",
+      "grade": "Premium",
+      "min": "61.50",
+      "max": "68.35",
+      "avg": "64.93",
+      "change": "+0.40",
+      "direction": "up"
+    },
+    {
+      "name": "Ron 97+",
+      "grade": "Super",
+      "min": "67.00",
+      "max": "74.20",
+      "avg": "70.60",
+      "change": "+0.60",
+      "direction": "up"
+    },
+    {
+      "name": "Diesel",
+      "grade": "Auto",
+      "min": "52.80",
+      "max": "58.45",
+      "avg": "55.63",
+      "change": "-0.50",
+      "direction": "down"
+    },
+    {
+      "name": "Kerosene",
+      "grade": "Household",
+      "min": "57.40",
+      "max": "63.90",
+      "avg": "60.65",
+      "change": "0.00",
+      "direction": "same"
+    }
+  ]
+}
